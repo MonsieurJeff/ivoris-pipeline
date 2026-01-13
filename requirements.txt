@@ -1,0 +1,11 @@
+# Ivoris Daily Extraction Pipeline
+# pip install -r requirements.txt
+
+# Core
+python-dotenv>=1.0.0
+
+# Database
+pyodbc>=5.0.0
+
+# Development
+pytest>=7.0.0

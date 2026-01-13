@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Database backup (too large for GitHub)
+data/input/*.bak
+
+# Output (generated files)
+data/output/*.csv
+data/output/*.json
+
+# Keep directories
+!data/output/.gitkeep
+
+# OS
+.DS_Store
