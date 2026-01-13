@@ -1,6 +1,17 @@
 # Ivoris Daily Extraction Pipeline
 
-**Clinero Coding Challenge** | Jean-Francois Desjardins | January 2026
+**Main Challenge** | Clinero Interview | Jean-Francois Desjardins | January 2026
+
+---
+
+## Two-Part Challenge
+
+This is the **main challenge**. An extension is available:
+
+| Part | Project | Description |
+|------|---------|-------------|
+| **Main Challenge** | ivoris-pipeline (this) | Daily extraction from ONE database |
+| **Extension** | [ivoris-multi-center](../ivoris-multi-center) | Extraction from 30 databases with random schemas |
 
 ---
 
@@ -176,9 +187,14 @@ ivoris-pipeline/
 
 ## Documentation
 
+### This Project (Main Challenge)
 - [CHALLENGE.md](./CHALLENGE.md) - Challenge requirements
 - [ACCEPTANCE.md](./ACCEPTANCE.md) - Acceptance criteria
 - [SESSION_LOG.md](./SESSION_LOG.md) - Development history
+
+### Extension
+- [ivoris-multi-center](../ivoris-multi-center) - Extension project (30 centers)
+- [ivoris-multi-center/BRIEFING.md](../ivoris-multi-center/BRIEFING.md) - Unified presentation prep
 
 ---
 

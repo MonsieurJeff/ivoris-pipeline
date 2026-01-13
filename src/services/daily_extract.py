@@ -108,7 +108,7 @@ class DailyExtractService:
 
     def export_to_csv(self, entries: list[ChartEntry], target_date: date) -> Path:
         """Export entries to CSV file."""
-        filename = f"daily_extract_{target_date.isoformat()}.csv"
+        filename = f"ivoris_chart_entries_{target_date.isoformat()}.csv"
         filepath = self.output_dir / filename
 
         fieldnames = [
@@ -127,7 +127,7 @@ class DailyExtractService:
 
     def export_to_json(self, entries: list[ChartEntry], target_date: date) -> Path:
         """Export entries to JSON file."""
-        filename = f"daily_extract_{target_date.isoformat()}.json"
+        filename = f"ivoris_chart_entries_{target_date.isoformat()}.json"
         filepath = self.output_dir / filename
 
         output = {

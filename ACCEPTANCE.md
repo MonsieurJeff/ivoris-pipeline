@@ -35,7 +35,7 @@ And each entry should include:
 ```gherkin
 Given chart entries exist for the target date
 When I run extraction with "--format csv"
-Then a CSV file should be created at "data/output/daily_extract_YYYY-MM-DD.csv"
+Then a CSV file should be created at "data/output/ivoris_chart_entries_YYYY-MM-DD.csv"
 And the CSV should have headers:
   | date | patient_id | insurance_status | insurance_name | chart_entry | service_codes |
 And German characters (ä, ö, ü, ß) should be encoded as UTF-8
@@ -48,7 +48,7 @@ And German characters (ä, ö, ü, ß) should be encoded as UTF-8
 ```gherkin
 Given chart entries exist for the target date
 When I run extraction with "--format json"
-Then a JSON file should be created at "data/output/daily_extract_YYYY-MM-DD.json"
+Then a JSON file should be created at "data/output/ivoris_chart_entries_YYYY-MM-DD.json"
 And the JSON should have structure:
   {
     "extraction_timestamp": "...",
@@ -155,6 +155,6 @@ python src/main.py --test-connection
 python src/main.py --daily-extract --date 2026-01-12
 
 # Verify output
-cat data/output/daily_extract_2026-01-12.csv
-cat data/output/daily_extract_2026-01-12.json
+cat data/output/ivoris_chart_entries_2026-01-12.csv
+cat data/output/ivoris_chart_entries_2026-01-12.json
 ```
